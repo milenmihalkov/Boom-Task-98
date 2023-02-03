@@ -21,8 +21,8 @@ return (
         <label className={styles.label}>Password</label>
             <input 
             className={styles.input}
-            type="text"
-            name="username"
+            type="password"
+            name="password"
             placeholder="Password"
             value={password}
             onChange= {(e)=> setPassword(e.target.value)}
