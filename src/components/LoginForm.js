@@ -9,7 +9,7 @@ const  [password, setPassword] = useState('');
 
 return (
     <form className={styles.form}>
-        <label className={styles.label}>Username </label>
+        <label className={styles.label}>Username 
             <input 
             className={styles.input}
             type="text"
@@ -18,7 +18,8 @@ return (
             value={username}
             onChange= {(e)=> setUsername(e.target.value)}
             />
-        <label className={styles.label}>Password</label>
+            </label>
+        <label className={styles.label}>Password
             <input 
             className={styles.input}
             type="password"
@@ -27,8 +28,9 @@ return (
             value={password}
             onChange= {(e)=> setPassword(e.target.value)}
             />
-        
-        <input className={styles.submit} type="submit" value="Submit" />
+        </label>
+        <button className={styles.submit} type="submit">Submit</button>
+        {/* <input  type="submit" value="Submit" /> */}
     </form>
 );
 }
